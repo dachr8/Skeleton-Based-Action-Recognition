@@ -25,10 +25,10 @@ def pre_normalization(data):
 
 
 if __name__ == '__main__':
-    data = np.load('../data/ntu/xsub/val_data.npy')
+    data = np.load('../data/ntu/xsub/val_data_joint.npy')
     pre_normalization(data)
     np.save('../data/ntu/xsub/val_data_scale.npy', data)
 
-    data = np.load('../data/ntu/xsub/train_data.npy')
+    data = np.load('../data/ntu/xsub/train_data_joint.npy')
     pre_normalization(data)
     np.save('../data/ntu/xsub/train_data_scale.npy', data)
